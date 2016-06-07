@@ -11,6 +11,7 @@ spec:
   - name: http
     port: 80
     targetPort: 8080
+    nodePort: 30800
   - name: jnlp
     port: 50000
   selector:

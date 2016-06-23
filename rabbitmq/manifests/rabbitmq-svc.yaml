@@ -6,7 +6,12 @@ metadata:
     provider: rabbitmq
     heritage: helm
 spec:
+  type: NodePort
   ports:
-  - port: 5672
+  - name: amqp
+    port: 5672
+  - name: admin
+    port: 15672
+    nodePort: 35672
   selector:
     provider: rabbitmq

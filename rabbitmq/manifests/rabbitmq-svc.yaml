@@ -12,6 +12,6 @@ spec:
     port: 5672
   - name: admin
     port: 15672
-    nodePort: 35672
+    nodePort: 30672
   selector:
     provider: rabbitmq
